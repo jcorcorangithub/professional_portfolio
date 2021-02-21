@@ -1,1 +1,28 @@
+nav {
+    text-align: center;
+    /* padding: 50px 0px 50px 0px; */
+}
 
+li {
+    display: inline;
+    padding: 50px;
+    display: inline-block;
+}
+
+a {
+    padding: 10px;
+    border-style: solid; 
+    border-color: black;
+}
+
+header {
+
+}
+
+.my-picture {
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    max-width: 50%;
+    
+}
