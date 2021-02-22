@@ -27,11 +27,14 @@ header {               /* this is for the main header above the picture */
     text-align: center;
 }
 
-.my-picture {
-    background-size: cover;
-    /* background-position: center; */
+#my-picture {
+    flex: 1 0 0;
+    text-align: center;
     border-radius: 50%;
-    max-width: 30%;
+    max-width: 40%;
+    /* display: inline; */
+    margin-bottom: 250px;
+
 }
 
 #contact-info {
@@ -42,7 +45,13 @@ header {               /* this is for the main header above the picture */
 #about-me {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 250px;
     border-top: solid black;    
+}
+
+p {
+    line-height: 50px;
+    font-size: large;
 }
 
 main {
@@ -50,9 +59,12 @@ main {
     border-top: solid black;
     text-align: center;
 }
-
 .project {
-
+    border-color: black;
+    border-style: solid;
 }
 
+.project img {
+    width: 50%;
+}
 
