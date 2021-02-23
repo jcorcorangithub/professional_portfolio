@@ -1,46 +1,58 @@
 nav {
     height: 100px;
     text-align: center;
-    display:list-item;
 }
 
         nav ul {
-            display: inline;
-            padding: 20px;
-        }
+            padding: 10px; 
+            list-style-type: none;
+        } 
 
         nav li {
-            display: inline;
             padding: 50px;
             display: inline-block;
         }
 
         nav a {
-            padding: 10px;
+            /* padding: 10px; */
             border-style: solid; 
             border-color: black;
+        }
+        @media screen and (max-width: 700px) {
+            nav li {
+                font-size: small;
+                padding: 10px 0px;
+            }
         }
 
 
 
-header {               /* this is for the main header above the picture */
+header {       /* this is for the main header above the picture */
+    text-align: center;
+}
+
+figure {
     text-align: center;
 }
 
 #my-picture {
-    flex: 1 0 0;
-    text-align: center;
     border-radius: 50%;
     max-width: 40%;
     /* display: inline; */
     margin-bottom: 250px;
-
+    /* position: relative; */
 }
 
+/* contact info section */
 #contact-info {
     display: inline;
     text-align: center;
 }
+
+#contact-info ul {
+    list-style-type: none;
+}
+
 
 #about-me {
     text-align: center;
@@ -55,16 +67,25 @@ p {
 }
 
 main {
-    margin-top: 50px;
     border-top: solid black;
+    /* text-align: center; */
+}
+h2 {
     text-align: center;
 }
+    
 .project {
-    border-color: black;
-    border-style: solid;
+    /* border-color: black;
+    border-style: solid; */
+    font-size: large;
+    display:block;
+    align-items: flex-start;
 }
 
 .project img {
     width: 50%;
+    padding-bottom: 50px;
 }
 
+
+/* put media querys below here */
