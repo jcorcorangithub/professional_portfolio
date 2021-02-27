@@ -1,56 +1,78 @@
+body {
+    background-image: url("tim-mossholder-nLcuPaiAiXY-unsplash.jpg") ;
+}
+
 nav {
-    height: 100px;
-    text-align: center;
+    text-align: center; 
+    padding: 50px 0px 0px 0px;
 }
 
         nav ul {
-            padding: 10px; 
+            padding: 50px 10px; 
             list-style-type: none;
         } 
 
         nav li {
-            padding: 50px;
+            padding: 10px 50px;
             display: inline-block;
         }
 
         nav a {
-            /* padding: 10px; */
-            border-style: solid; 
-            border-color: black;
+            color: rgb(100, 98, 98);
+            font-size: 175%;
         }
-        @media screen and (max-width: 700px) {
+        a:hover{
+            background-color:rgb(148, 105, 75);
+        }
+        @media screen and (max-width: 880px) {
+            nav {
+                padding: 0px;
+            }
             nav li {
-                font-size: small;
-                padding: 10px 0px;
+                display: block;
+                padding:30px 0px;
+            }
+            nav a {
+                font-size: 170%;
             }
         }
+        
+        
 
 
-
-header {       /* this is for the main header above the picture */
+h1 {       /* this is for the main header above the picture */
     text-align: center;
+    color:navajowhite;
+    font-family:"source Code Pro", monospace;
 }
+
 
 figure {
     text-align: center;
+    margin-bottom: 300px;
 }
 
 #my-picture {
     border-radius: 50%;
-    max-width: 40%;
-    /* display: inline; */
-    margin-bottom: 250px;
-    /* position: relative; */
+    max-width: 30%;
 }
 
 /* contact info section */
 #contact-info {
-    display: inline;
     text-align: center;
+    /* border-top:solid; */
+    padding: 50px 0px 150px 0px;
 }
 
 #contact-info ul {
     list-style-type: none;
+    padding: 10px;
+}
+
+#contact-info li {
+    font-size: 150%;
+    padding: 20px 0px;
+    color: slategray;
 }
 
 
@@ -58,17 +80,21 @@ figure {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 250px;
-    border-top: solid black;    
+    border-top: solid black;
+    color: rgb(136, 134, 134); 
+    font-family:"source Code Pro", monospace;  
 }
 
 p {
-    line-height: 50px;
+    line-height: 80px;
     font-size: large;
+    
 }
 
 main {
     border-top: solid black;
-    /* text-align: center; */
+    text-align: center;
+    color: rgb(136, 134, 134);
 }
 h2 {
     text-align: center;
@@ -79,7 +105,6 @@ h2 {
     border-style: solid; */
     font-size: large;
     display:block;
-    align-items: flex-start;
 }
 
 .project img {
