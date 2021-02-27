@@ -1,10 +1,12 @@
 body {
-    background-image: url("tim-mossholder-nLcuPaiAiXY-unsplash.jpg") ;
+    background-image: url("projectimages/tim-mossholder-nLcuPaiAiXY-unsplash.jpg") ;
+    color: rgb(100, 98, 98);
+    font-family:"source Code Pro", monospace; 
 }
 
 nav {
     text-align: center; 
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0px;
 }
 
         nav ul {
@@ -18,32 +20,16 @@ nav {
         }
 
         nav a {
-            color: rgb(100, 98, 98);
-            font-size: 175%;
+            font-size: 200%;
         }
         a:hover{
             background-color:rgb(148, 105, 75);
         }
-        @media screen and (max-width: 880px) {
-            nav {
-                padding: 0px;
-            }
-            nav li {
-                display: block;
-                padding:30px 0px;
-            }
-            nav a {
-                font-size: 170%;
-            }
-        }
         
-        
-
 
 h1 {       /* this is for the main header above the picture */
     text-align: center;
     color:navajowhite;
-    font-family:"source Code Pro", monospace;
 }
 
 
@@ -60,7 +46,6 @@ figure {
 /* contact info section */
 #contact-info {
     text-align: center;
-    /* border-top:solid; */
     padding: 50px 0px 150px 0px;
 }
 
@@ -72,45 +57,68 @@ figure {
 #contact-info li {
     font-size: 150%;
     padding: 20px 0px;
-    color: slategray;
 }
-
 
 #about-me {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 250px;
     border-top: solid black;
-    color: rgb(136, 134, 134); 
-    font-family:"source Code Pro", monospace;  
 }
 
 p {
     line-height: 80px;
     font-size: large;
-    
+    margin: 10%;
 }
 
 main {
     border-top: solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     text-align: center;
-    color: rgb(136, 134, 134);
-}
-h2 {
-    text-align: center;
-}
-    
-.project {
-    /* border-color: black;
-    border-style: solid; */
-    font-size: large;
-    display:block;
+    justify-content: space-evenly;
 }
 
-.project img {
-    width: 50%;
-    padding-bottom: 50px;
+main img {
+    box-shadow: 10px 10px 50px lightslategray;
+}
+
+main img:active {
+    /* links for each pic */
 }
 
 
-/* put media querys below here */
+
+
+@media screen and (max-width: 1050px) {
+    nav {
+        padding: 0px;
+    }
+    nav li {
+        display: block;
+        padding:30px 0px;
+    }
+    nav a {
+        font-size: 170%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #contact-info li {
+        font-size: 120%;
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        flex-direction: column;
+    }
+    main img {
+        width:150px;
+       
+    }
+}
