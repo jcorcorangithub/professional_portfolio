@@ -4,6 +4,10 @@ body {
     font-family:"source Code Pro", monospace; 
 }
 
+a {
+    text-decoration: none; /* prevents links from being underlined */
+}
+
 nav {
     text-align: center; 
     padding: 50px 0px;
