@@ -90,6 +90,7 @@ main {
 main img {
     box-shadow: 10px 10px 50px lightslategray;
     border-radius: 5%;
+    max-width: 30%;
 }
 
 main img:hover {
