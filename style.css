@@ -12,6 +12,13 @@ nav {
     text-align: center; 
     padding: 50px 0px;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(27, 27, 26);
+    opacity: .8;
+} 
         nav ul {
             padding: 50px 10px; 
             list-style-type: none;
