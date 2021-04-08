@@ -1,9 +1,10 @@
 html {
     scroll-padding-top:200px; 
   }
-
+  
 body {
     background-image: url("projectimages/tim-mossholder-nLcuPaiAiXY-unsplash.jpg") ;
+    /* TODO: look into darkening image */
     color: rgb(100, 98, 98);
     font-family:"source Code Pro", monospace; 
 }
@@ -16,7 +17,7 @@ nav {
     text-align: center; 
     padding: 10px 0px;
 }
-/* make this behave correctly by not blocking any of the info */
+
 .sticky {
     position: fixed;
     top: 0;
@@ -39,7 +40,7 @@ nav {
         }
         a:hover{
             background-color:rgb(54, 43, 33);
-            /* change this so that its not blocky */
+            /* TODO: change this so that its not blocky */
         }
         
 /* this is for the main header above the picture */
@@ -57,7 +58,6 @@ figure {
 
 #my-picture {
     border-radius: 50%;
-    /* max-width: 30%; */
     max-width: 250px;
 }
 
@@ -122,6 +122,9 @@ main img:hover {
 
 /* for nav bar */
 @media screen and (max-width: 1050px) {
+    html {
+        scroll-padding-top:400px; 
+      }
     nav {
         padding: 0px;
     }
@@ -131,6 +134,9 @@ main img:hover {
     }
     nav a {
         font-size: 170%;
+    }
+    h1 {
+        padding-top: 400px;
     }
 }
 
